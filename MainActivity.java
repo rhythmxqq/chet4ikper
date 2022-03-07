@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onClickBtnAddStudents(View view) {
+    public void onClickBtnAddSKot(View view) {
         counter+=1;
         TextView counterView = (TextView)findViewById(R.id.txt_counter);
         counterView.setText(counter.toString());
