@@ -59,5 +59,14 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("Count", counter);
         Log.d(LOG_TAG, "onSaveInstateState");
     }
+    public void resetUI() {
+        ((TextView) findViewById(R.id.txt_counter)).setText(counter.toString());
+        Log.d(LOG_TAG, "resetUI");
+    }
+    public void onResume() {
+        super.onResume();
+        Log.d(LOG_TAG, "onResume");
+        resetUI();
+    }
 
 }
